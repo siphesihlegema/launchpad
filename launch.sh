@@ -10,7 +10,7 @@ LANG_TYPE=${2:-python} # Defaults to python if 2nd arg is missing
 
 # Check if user enterd project name
 if [ -z "$PROJECT_NAME" ]; then
-  echo "❌ Error: You need a project name."
+  echo "Error: You need a project name."
   echo "Usage: hack <project_name> [java]"
   exit 1
 fi
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 EOT
 
 elif [ "$LANG_TYPE" == "java" ]; then
-    echo "☕ Setting up Java..."
+    echo "Setting up Java..."
 
     # Java .gitignore (Classes, JARs, IDE configs)
     curl -sL https://www.toptal.com/developers/gitignore/api/java,macos,windows,visualstudiocode,intellij > .gitignore
@@ -72,7 +72,7 @@ public class $CLASS_NAME {
 }
 EOT
 
-    echo "ℹ️  Note: Source file is in src/$CLASS_NAME.java"
+    echo "Note: Source file is in src/$CLASS_NAME.java"
 
 else
     echo "Unknown language. Created empty folder."
@@ -88,5 +88,5 @@ git commit -m "Initial commit: Project scaffold"
 git push -u origin main
 
 # Open VS Code (or your preferred editor)
-echo "✨ Ready to code."
+echo "Ready to code."
 code .
