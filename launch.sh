@@ -86,7 +86,3 @@ echo ".env" >> .gitignore
 git add .
 git commit -m "Initial commit: Project scaffold"
 git push -u origin main
-
-# Open VS Code (or your preferred editor)
-echo "Ready to code."
-code .
