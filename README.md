@@ -17,7 +17,6 @@ Launchpad is a workflow automation tool designed to eliminate the tedious "setup
   - Fetches a robust `.gitignore` for Java/IntelliJ/VS Code.
 - **🧠 Zero Friction:**
   - Auto-creates `.env` for secrets.
-  - Opens the project immediately in VS Code (`code .`).
 
 ---
 
